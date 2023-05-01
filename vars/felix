@@ -9,21 +9,21 @@ readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="UQ1A.231205.015"
+readonly build_id="AP2A.240605.024"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-14.0.0_r14"
-readonly aosp_tag="android-14.0.0_r17"
+readonly prev_aosp_tag="android-14.0.0_r35"
+readonly aosp_tag="android-14.0.0_r50"
 
-readonly build_number="11084887"
+readonly build_number="11860263"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/felix-uq1a.231205.015-factory-7bf17efb.zip"
-readonly image_sha256="7bf17efba4e53f81a6349fc93e535cde0c25cb8b190375600260c37ca0feb3e7"
+readonly image_url="https://dl.google.com/dl/android/aosp/felix-ap2a.240605.024-factory-4e4456f0.zip"
+readonly image_sha256="4e4456f0bffb7e5664cc6c11515a1efd64e7d57cbce40b55b8f32d4485efc3f2"
 
-readonly flash_url="https://flash.android.com/build/11084887?target=felix-user&signed"
+readonly flash_url="https://flash.android.com/build/11860263?target=felix-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-uq1a.231205.015-128c9c6b.zip"
-readonly ota_sha256="128c9c6bb2c52eb727e37a73b2f9cc0022ef66688dfb46443892b68ac27cfd3c"
+readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-ap2a.240605.024-8d6257df.zip"
+readonly ota_sha256="8d6257dff51ca512a6791cc5346c6a0d281e24b9fa3a7595118028be362c2043"
 
-readonly security_patch="2023-12-05"
+readonly security_patch="2024-06-05"
