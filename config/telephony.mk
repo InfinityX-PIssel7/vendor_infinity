@@ -23,3 +23,7 @@ PRODUCT_PACKAGES += \
 # (for devices that check this)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true
+
+# Include Carrier Runtime Configuration
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/infinity/CarrierSettings/overlay
