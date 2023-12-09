@@ -23,6 +23,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true
 
-# Disable mobile data by default
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.android.mobiledata=false
+# Include Carrier Runtime Configuration
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/infinity/CarrierSettings/overlay
