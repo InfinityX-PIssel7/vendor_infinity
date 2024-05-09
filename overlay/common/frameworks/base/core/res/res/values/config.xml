@@ -716,6 +716,9 @@
     <!-- Maximum velocity to initiate a fling, as measured in dips per second. -->
     <dimen name="config_viewMaxFlingVelocity">12000dp</dimen>
 
+    <!-- Apps Not Reporting Crashes -->
+    <string translatable="false" name="config_appsNotReportingCrashes">com.android.systemui</string>
+
     <!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
 </resources>
