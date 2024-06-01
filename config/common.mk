@@ -108,8 +108,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
 # Gapps
-ifeq ($(WITH_GAPPS),true)
-$(call inherit-product, vendor/gms/common/common-vendor.mk)
+ifeq ($(WITH_GMS),true)
+$(call inherit-product, vendor/gms/gms_full.mk)
 
 DONT_DEXPREOPT_PREBUILTS := true
 
@@ -117,13 +117,6 @@ DONT_DEXPREOPT_PREBUILTS := true
 PRODUCT_PACKAGES += \
     UpdaterGMSOverlay
 endif
-
-# Gboard side padding
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.ime.kb_pad_port_l=4 \
-    ro.com.google.ime.kb_pad_port_r=4 \
-    ro.com.google.ime.kb_pad_land_l=64 \
-    ro.com.google.ime.kb_pad_land_r=64
 
 # Google Photos Pixel Exclusive XML
 PRODUCT_COPY_FILES += \
