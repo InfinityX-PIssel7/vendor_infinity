@@ -111,6 +111,11 @@ ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/gms/gms_full.mk)
 $(call inherit-product, vendor/pixel-framework/config.mk)
 DONT_DEXPREOPT_PREBUILTS := true
+PRODUCT_PACKAGES += \
+    GappsFrameworks \
+    GappsLauncherOverlay \
+    GappsSettings \
+    GappsSystemUI \
 
 # UpdaterGMSOverlay
 PRODUCT_PACKAGES += \
