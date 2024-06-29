@@ -260,7 +260,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinity/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
 # Pixel customization
-TARGET_SUPPORTS_GOOGLE_BATTERY ?= false
+TARGET_SUPPORTS_GOOGLE_BATTERY ?= true
 
 # Protobuf - Workaround for prebuilt Qualcomm HAL
 PRODUCT_PACKAGES += \
@@ -279,7 +279,8 @@ endif
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
+    SettingsGoogle \
+    SystemUIGoogle \
     Launcher3QuickStep
 
 # Speed profile services and wifi-service to reduce RAM and storage
