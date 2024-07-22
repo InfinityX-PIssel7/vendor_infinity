@@ -721,4 +721,14 @@
 
     <!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
+
+    <string-array name="config_certifiedBuildProperties" translatable="false">
+        <item>MANUFACTURER:Google</item>
+        <item>BRAND:google</item>
+        <item>DEVICE:husky</item>
+        <item>PRODUCT:husky_beta</item>
+        <item>MODEL:Pixel</item>
+        <item>FINGERPRINT:google/husky_beta/husky:15/AP31.240517.022/11948202:user/release-keys"</item>
+        <item>SECURITY_PATCH:2024-06-05</item>
+    </string-array>
 </resources>

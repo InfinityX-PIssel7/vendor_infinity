@@ -1,6 +1,5 @@
 # GMS
 ifeq ($(WITH_GMS),true)
-WITH_GMS_COMMS_SUITE := true
 
 ifeq ($(TARGET_BUILD_GOOGLE_TELEPHONY),true)
 $(call inherit-product, vendor/bcr/bcr.mk)
@@ -24,7 +23,3 @@ PRODUCT_PACKAGES += \
 # (for devices that check this)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true
-
-# Disable mobile data by default
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.android.mobiledata=false
