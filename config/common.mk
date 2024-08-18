@@ -110,6 +110,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/gms/gms_full.mk)
 $(call inherit-product, vendor/pixel-framework/config.mk)
+DONT_DEXPREOPT_PREBUILTS := true
 
 # UpdaterGMSOverlay
 PRODUCT_PACKAGES += \
