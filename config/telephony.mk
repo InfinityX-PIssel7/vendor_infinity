@@ -1,8 +1,6 @@
 # BCR
-ifeq ($(WITH_GAPPS),true)
-ifeq ($(TARGET_BUILD_GOOGLE_TELEPHONY),true)
+ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/bcr/bcr.mk)
-endif
 endif
 
 # Sensitive Phone Numbers list
